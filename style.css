@@ -1,0 +1,253 @@
+@charset "UTF-8";
+
+:root {
+  /* Color */
+  --white-color: #ffffff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #efefef;
+
+  /* Size */
+  --padding: 12px;
+  --margin: 12px;
+  --avatar-size: 36px;
+  --icon-size: 16px;
+
+  /* font size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+button:focus {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: var(--white-color);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+header .logo {
+  font-size: var(--font-large);
+}
+
+header .logo i {
+  color: var(--red-color);
+}
+
+header .search .fa-search {
+  margin-right: var(--padding);
+}
+
+/* player Section */
+#player {
+  position: sticky;
+  top: 0;
+  background-color: var(--black-color);
+  text-align: center;
+  width: 100%;
+}
+
+#player video {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+/* Video-info Section */
+#video-info {
+  padding: var(--padding);
+}
+
+#video-info #video-detail .hash-tag {
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+}
+
+#video-info #video-detail .hash-tag li {
+  margin-right: var(--margin);
+}
+
+#video-info #video-detail .video-titleAndBtn {
+  display: flex;
+}
+
+#video-info #video-detail .video-titleAndBtn .title {
+  font-size: var(--font-medium);
+  margin-right: var(--margin);
+}
+
+#video-info #video-detail .video-titleAndBtn .clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+#video-info #video-detail .video-titleAndBtn .moreBtn {
+  height: 100%;
+}
+
+#video-info #video-detail .video-titleAndBtn .moreBtn.clicked {
+  transform: rotate(180deg);
+  transition: transform 300ms ease-in-out;
+}
+
+#video-info .video-view-date {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+/* Action Buttons */
+#video-info .actions {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--margin) 0px;
+}
+
+#video-info .actions button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+#video-info .actions button i {
+  margin-bottom: calc(var(--margin) / 2);
+  font-size: var(--icon-size);
+}
+
+#video-info .actions button .active {
+  color: var(--blue-color);
+}
+
+/* Youtuber-info */
+#video-info .youtuber-info {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+}
+
+#video-info .youtuber-info .profile {
+  display: flex;
+  align-items: center;
+  padding: calc(var(--padding) / 2);
+}
+
+#video-info .youtuber-info .profile img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  margin-right: var(--margin);
+}
+
+#video-info .youtuber-info .profile .info {
+  display: flex;
+  flex-direction: column;
+}
+
+#video-info .youtuber-info .profile .info .name {
+  font-size: var(--font-medium);
+}
+
+#video-info .youtuber-info .profile .info .subscribers {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+#video-info .youtuber-info .sub-btn {
+  text-transform: uppercase;
+  color: var(--red-color);
+  font-size: var(--font-medium);
+}
+
+/* Play-list */
+#play-list {
+  padding: 0 var(--padding);
+}
+
+#play-list .Upnext {
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+  margin-bottom: calc(var(--margin) / 2);
+}
+
+#play-list .item {
+  display: flex;
+  margin-top: var(--margin);
+  max-width: 1500px;
+}
+
+#play-list .img {
+  flex: 1 1 35%;
+  margin-right: var(--padding);
+}
+
+#play-list .img img {
+  width: 100%;
+}
+
+#play-list .next-video-info {
+  flex: 1 1 60%;
+}
+
+#play-list button {
+  flex: 1 1 5%;
+  height: 100%;
+}
+
+#play-list .item .next-video-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#play-list .item .next-video-info .title {
+  font-size: var(--font-small);
+}
+
+#play-list .item .next-video-info .youtuber,
+#play-list .item .next-video-info .views {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.infoAndPlaylist {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1000px) {
+  .infoAndPlaylist {
+    flex-direction: row;
+    margin: var(--margin) 0;
+  }
+}

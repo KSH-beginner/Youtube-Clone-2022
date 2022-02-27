@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Youtube Mobile</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <script
+    src="https://kit.fontawesome.com/47ac434296.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="logo-title">Youtube</span>
+      </div>
+
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+
+    <!-- player Section -->
+    <section id="player">
+      <video src="../../Spring-Clone-Coding.mp4" controls>
+        <div id="play-bar"></div>
+      </video>
+    </section>
+
+    <div class="infoAndPlaylist">
+      <!-- Video-info Section -->
+      <section id="video-info">
+        <!-- video-detail -->
+        <div id="video-detail">
+          <ul class="hash-tag">
+            <li>#Kim</li>
+            <li>#Seonghun</li>
+            <li>#KSH</li>
+          </ul>
+
+          <div class="video-titleAndBtn">
+            <div class="title clamp">
+              Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라
+              만들기 | 프론트엔드 개발자 입문편: HTML, CSS, JAVASCRIPT
+              드림코딩과 함께하는 프론트엔드 실전 입문편
+            </div>
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+
+          <div class="video-view-date">1M views 1 month ago</div>
+        </div>
+        <!-- actions -->
+        <ul class="actions">
+          <li>
+            <button>
+              <i class="active fas fa-thumbs-up"></i>
+              <span>70</span>
+            </button>
+          </li>
+
+          <li>
+            <button>
+              <i class="fas fa-thumbs-down"></i>
+              <span>0</span>
+            </button>
+          </li>
+
+          <li>
+            <button>
+              <i class="fas fa-share"></i>
+              <span>Share</span>
+            </button>
+          </li>
+
+          <li>
+            <button>
+              <i class="fas fa-plus"></i>
+              <span>Save</span>
+            </button>
+          </li>
+
+          <li>
+            <button>
+              <i class="fab fa-font-awesome-flag"></i>
+              <span>Report</span>
+            </button>
+          </li>
+        </ul>
+        <!-- Youtuber-info -->
+        <div class="youtuber-info">
+          <div class="profile">
+            <img src="../../../../방.jpg" />
+            <div class="info">
+              <div class="name">KSH</div>
+              <div class="subscribers">1M subscribers</div>
+            </div>
+          </div>
+          <button class="sub-btn">Subscribe</button>
+        </div>
+      </section>
+
+      <!-- Play-list Section -->
+      <section id="play-list">
+        <div class="Upnext">Up next</div>
+        <ul class="next-video">
+          <li class="item">
+            <div class="img">
+              <img src="../../스프링 클론코딩2.png" />
+            </div>
+            <div class="next-video-info">
+              <div class="title">
+                프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발
+                입문자편 강의를 시작합니다 💙 (HTML, CSS, Javscript + 실전
+                프로젝트)
+              </div>
+              <div class="youtuber">KSH</div>
+              <div class="views">82K views</div>
+            </div>
+            <button>
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+
+          <li class="item">
+            <div class="img">
+              <img src="../../../../블로그/썸네일/React 썸네일.png" />
+            </div>
+            <div class="next-video-info">
+              <div class="title">
+                HTML 기초, React 할때 꼭 필요한 팁! 쉽다고 무시하면 안돼요 |
+                프론트엔드 개발자 입문편: HTML, CSS, Javscript
+              </div>
+              <div class="youtuber">KSH</div>
+              <div class="views">82K views</div>
+            </div>
+            <button>
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+
+          <li class="item">
+            <div class="img">
+              <img src="../../../../블로그/썸네일/TIL썸네일.jpg" />
+            </div>
+            <div class="next-video-info">
+              <div class="title">
+                HTML 태그 완성, 웹 포트폴리오 만들기 전에 꼭 보세요 | 프론트엔드
+                개발자 입문편: HTML, CSS, Javascript
+              </div>
+              <div class="youtuber">KSH</div>
+              <div class="views">82K views</div>
+            </div>
+            <button>
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+
+  <script src="./main.js"></script>
+</html>
